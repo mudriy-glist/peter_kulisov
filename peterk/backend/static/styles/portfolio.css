@@ -147,6 +147,8 @@ body {
     top: 68%;
 }
 
+  
+
 
 
 
@@ -356,5 +358,42 @@ button {
 #bio_photo {
     position: absolute;
     left: 55%;
-    top:145%
+    top:145%;
+    border-radius: 2%
 }
+
+#underphoto_rect {
+  position: absolute;
+  top: 148%;
+  left: 56%;
+  border-radius: 2%
+}
+
+.projects_container {
+  position:absolute;
+    top:240%;
+    margin-left: 50%;
+    margin-right: 25%;
+    color: #ccd6f6;
+    font-size: 1.3em;
+}
+
+.projects_container h3 {
+  color:rgb(100, 255, 218)
+}
+
+#career_project_a{
+  background-image: url("{% static 'images/career_project.png' %}");
+  background-size: contain;
+  overflow: hidden;
+  position: absolute;
+  top: 243%;
+  left: 25%;
+  width: 370px;
+  height: 250px;
+}
+
+/* #career_project_a {
+  background: rgba(100, 255, 218, 0.75);
+  
+} */
