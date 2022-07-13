@@ -1,14 +1,16 @@
 body {
-    background-color: #071833;
-    color: #64ffda;
+    background-color: rgb(7, 24, 51);
     font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;;
+}
+
+.name_container {
+    margin-top: 14%;
+    margin-left: 8%; 
 }
 
 #name {
     font-size: 7em;
-    margin-top: 14%;
     margin-bottom: 0%;
-    margin-left: 8%;
     color: #ccd6f6;;
 }
 #slogan {
@@ -23,4 +25,18 @@ body {
     color: #495670;
     font-size: 2em;
     margin-left: 8%;
+}
+
+.name_popup {
+    color: #64ffda;
+    font-size: 1em;
+    position: absolute;
+    left: 55%;
+    top: 20%
+}
+
+.popup_line {
+    position: absolute;
+    left: 52%;
+    top: 21%
 }
