@@ -1,6 +1,6 @@
 body {
     background-color: rgb(7, 24, 51);
-    font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;;
+    font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
 }
 
 .name_container {
@@ -27,7 +27,7 @@ body {
     margin-left: 8%;
 }
 
-.name_popup {
+.name_popup1 {
     color: #64ffda;
     font-size: 1em;
     position: absolute;
@@ -39,4 +39,106 @@ body {
     position: absolute;
     left: 52%;
     top: 21%
+}
+
+
+#border {
+  border-bottom: solid 3px rgba(100, 255, 218,.75);
+  position: absolute;
+  width: 20px;
+  right: -7px;
+}
+
+/* Animation */
+#parent {
+  animation: animated-text 1s steps(30,end) 1s 1 normal both
+}
+
+#border {
+   animation: animated-cursor 600ms steps(30,end) infinite;
+}
+
+/* text animation */
+
+@keyframes animated-text{
+  from{width: 0;}
+  to{width: 115px;}
+}
+
+/* cursor animations */
+
+@keyframes animated-cursor{
+  from{border-bottom-color: rgba(100, 255, 218,.75);}
+  to{border-bottom-color: transparent;}
+}
+#parent {
+    height: 40px;
+    white-space: nowrap;
+    overflow: hidden; 
+    font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace; 
+    font-size: 1em;
+    color: rgba(100, 255, 218,.70);
+    position: relative;
+  }
+  
+  .name_popup2 {
+    color: #64ffda;
+    font-size: 1em;
+    position: absolute;
+    left: 10%;
+    top: 79.75%
+  }
+
+  .popup_line2 {
+    position: absolute;
+    left: 2%;
+    top: 50%
+}
+#parent2 {
+    animation: animated-text2 1s steps(30,end) 1s 1 normal both
+  }
+
+  @keyframes animated-text2{
+    from{width: 0;}
+    to{width: 170px;}
+  }
+
+  #parent2 {
+    height: 40px;
+    white-space: nowrap;
+    overflow: hidden; 
+    font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace; 
+    font-size: 1em;
+    color: rgba(100, 255, 218,.70);
+    position: relative;
+  }
+
+  .name_popup3 {
+    color: #64ffda;
+    font-size: 1em;
+    position: absolute;
+    left: 45%;
+    top: 72.75%
+  }
+  #parent3 {
+    height: 40px;
+    white-space: nowrap;
+    overflow: hidden; 
+    font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace; 
+    font-size: 1em;
+    color: rgba(100, 255, 218,.70);
+    position: relative;
+  }
+  #parent3 {
+    animation: animated-text3 1s steps(30,end) 1s 1 normal both
+  }
+
+  @keyframes animated-text3{
+    from{width: 0;}
+    to{width: 200px;}
+  }
+  .popup_line3 {
+    position: absolute;
+    left: 30%;
+    top: 68%;
 }
