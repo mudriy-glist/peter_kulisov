@@ -2,7 +2,7 @@
 {% load static %}
 
 {% block head %}
-<title>Main</title>
+<title>Peter Kulisov</title>
 <link rel="stylesheet" href="{% static 'styles/portfolio.css' %}">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
@@ -13,7 +13,7 @@
 <header id="nav-wrapper">
     <nav id="nav">
       <div class="nav left">
-        <span class="gradient skew"><h1 class="logo un-skew"><a href="#home">Logo Here</a></h1></span>
+        <span class="gradient skew"><h1 class="logo un-skew"><a href="{% url 'index' %}">Back</a></h1></span>
         <button id="menu" class="btn-nav"><span class="fas fa-bars"></span></button>
       </div>
       <div class="nav right">
