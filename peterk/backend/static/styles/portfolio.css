@@ -1,0 +1,26 @@
+body {
+    background-color: #071833;
+    color: #64ffda;
+    font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;;
+}
+
+#name {
+    font-size: 7em;
+    margin-top: 14%;
+    margin-bottom: 0%;
+    margin-left: 8%;
+    color: #ccd6f6;;
+}
+#slogan {
+    font-size: 7em;
+    margin-top: 0%;
+    padding-top: 0%;
+    margin-left: 8%;
+    color: #8892b0;
+}
+
+.description {
+    color: #495670;
+    font-size: 2em;
+    margin-left: 8%;
+}
