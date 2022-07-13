@@ -127,3 +127,15 @@ body, html {
     max-width: 100%;
   }
   
+  .exit_a {
+    position: absolute;
+    bottom: 5%;
+    left: 45%;
+    z-index: 5;
+    font-family: sans-serif;
+    height: 30px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 30px;
+    
+  }
