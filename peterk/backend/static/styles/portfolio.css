@@ -308,7 +308,7 @@ button {
       display: none;
     }
     .nav a:link.active, a:visited.active, a:active.active {
-      background: #64ffda;
+      background: rgb(100, 255, 218);
       background: -webkit-linear-gradient(45deg, #64ffda, #12b58f);
       background: linear-gradient(45deg, #64ffda, #12b58f);
       color: #fff;
@@ -340,3 +340,21 @@ button {
     }
   }
   
+
+.bio_container {
+    position:absolute;
+    top:140%;
+    margin-left: 25%;
+    margin-right: 50%;
+    color: #ccd6f6;
+    font-size: 1.3em;
+}
+.bio_container h3 {
+    color:rgb(100, 255, 218)
+}
+
+#bio_photo {
+    position: absolute;
+    left: 55%;
+    top:145%
+}
