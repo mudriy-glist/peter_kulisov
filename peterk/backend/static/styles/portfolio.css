@@ -1,3 +1,4 @@
+@media screen and (min-width: 992px){
 body {
     background-color: rgb(7, 24, 51);
     font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
@@ -8,8 +9,8 @@ body {
 .name_container {
     position: absolute;
     width: 100%;
-    top: 25%;
-    margin-left: 8%; 
+    top: 253.5px;
+    margin-left: 150px; 
 }
 
 #name {
@@ -20,31 +21,78 @@ body {
 #slogan {
     font-size: 7em;
     position: absolute;
-    top: 40%;
-    margin-left: 8%;
+    top: 383.5px;
+    margin-left: 150px;
     color: #8892b0;
 }
 
 .description {
     color: #495670;
     position: absolute;
-    top: 60%;
+    top: 560px;
     font-size: 2em;
-    margin-left: 8%;
+    margin-left: 155px;
+}
+
+.popup1_container {
+  position:absolute;
+  top: 150px;
+  left: 1075px;
+  height: 200px;
+  width: 250px;
 }
 
 .name_popup1 {
     color: #64ffda;
     font-size: 1em;
-    position: static;
-    left: 47%;
-    top: -50%
+    position: relative;
+    top: 14%;
+    left: 25%;
+    
 }
 
 .popup_line {
-    position: static;
-    left: 52%;
-    top: 21%
+    position: relative;
+}
+
+.popup2_container {
+  position:absolute;
+  top: 440px;
+  left: 20px;
+  height: 200px;
+  width: 250px;
+}
+
+.name_popup2 {
+  color: #64ffda;
+  font-size: 1em;
+  position: relative;
+  top: 318px;
+  left: 160px;
+}
+
+.popup_line2 {
+  position: relative;
+}
+
+.popup3_container{
+  position:absolute;
+  top: 600px;
+  left: 550px;
+  height: 200px;
+  width: 250px;
+}
+
+
+.name_popup3 {
+  color: #64ffda;
+  font-size: 1em;
+  position: relative;
+  top: 85px;
+  left: 285px;
+}
+.popup_line3 {
+  position: relative;
 }
 
 
@@ -87,19 +135,7 @@ body {
     position: inherit;
   }
   
-  .name_popup2 {
-    color: #64ffda;
-    font-size: 1em;
-    position: absolute;
-    left: 10%;
-    top: 79.75%
-  }
 
-  .popup_line2 {
-    position: absolute;
-    left: 2%;
-    top: 50%
-}
 #parent2 {
     animation: animated-text2 1s steps(30,end) 1s 1 normal both
   }
@@ -119,13 +155,9 @@ body {
     position: relative;
   }
 
-  .name_popup3 {
-    color: #64ffda;
-    font-size: 1em;
-    position: absolute;
-    left: 45%;
-    top: 72.75%
-  }
+
+
+
   #parent3 {
     height: 40px;
     white-space: nowrap;
@@ -143,11 +175,7 @@ body {
     from{width: 0;}
     to{width: 200px;}
   }
-  .popup_line3 {
-    position: absolute;
-    left: 30%;
-    top: 68%;
-}
+
 
   
 
@@ -542,4 +570,8 @@ font-style: normal;
   top: 326%;
   align-items: center;
   margin-left: 30%;
+}
+}
+@media screen and (max-width:991px){
+  
 }
