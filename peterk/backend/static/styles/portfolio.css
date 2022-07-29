@@ -384,15 +384,14 @@ button {
   color:rgb(100, 255, 218)
 }
 
-#career_project_a{
-  background-image: url("{% static 'images/career_project.png' %}");
+#career_project_a img{
   background-size: contain;
   overflow: hidden;
   position: absolute;
   top: 243%;
-  left: 25%;
-  width: 370px;
-  height: 250px;
+  left: 23%;
+  width: 470px;
+  height: 350px;
 }
 
 /* #career_project_a {
