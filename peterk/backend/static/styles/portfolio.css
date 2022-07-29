@@ -389,11 +389,17 @@ button {
   overflow: hidden;
   position: absolute;
   top: 243%;
-  left: 23%;
+  left: 20%;
   width: 470px;
   height: 350px;
+  border-radius: 2%
 }
-
+#underproject_rect {
+  position: absolute;
+  top: 246%;
+  left: 19%;
+  border-radius: 2%
+}
 /* #career_project_a {
   background: rgba(100, 255, 218, 0.75);
   
