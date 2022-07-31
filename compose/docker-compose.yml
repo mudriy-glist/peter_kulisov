@@ -1,0 +1,33 @@
+version: '2.4'
+
+volumes:
+  static_volume:
+
+services:
+
+  nginx:
+    image: peterk/nginx
+    build: ../peterk/nginx
+    volumes:
+      - static_volume:/code/staticfiles
+    ports:
+      - 80:80
+    depends_on:
+      - web
+
+
+  web:
+    restart: always
+    image: peterk/web
+    build:
+      context: ../peterk
+      dockerfile: ./Docker/Dockerfile.local
+    expose:
+      - 8000
+    # depends_on:
+    #   - db
+    volumes:
+      - ../peterk:/code
+      - static_volume:/code/staticfiles
+    env_file:
+      - ../peterk/.env

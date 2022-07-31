@@ -1,11 +1,13 @@
-from django.shortcuts import render
 from backend.models import Message
 from django.http import HttpResponseRedirect
+from django.shortcuts import render
 from django.urls import reverse
+
 
 # Create your views here.
 def portfolio(request):
     return render(request, "backend/portfolio.html")
+
 
 def message(request):
     if request.method == "POST":
