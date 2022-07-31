@@ -24,8 +24,8 @@ services:
       dockerfile: ./Docker/Dockerfile.local
     expose:
       - 8000
-    # depends_on:
-    #   - db
+    depends_on:
+      - db
     volumes:
       - ../peterk:/code
       - static_volume:/code/staticfiles
