@@ -30,9 +30,6 @@ RUN pip install --upgrade pip \
 # Tools
 COPY . /code/
 
-# Ports
-EXPOSE 80
-EXPOSE 2222
 
 # Entrypoint
 COPY Docker/entrypoint.local.sh /usr/local/bin
