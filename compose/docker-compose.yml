@@ -30,4 +30,4 @@ services:
       - ../peterk:/code
       - static_volume:/code/staticfiles
     env_file:
-      - ../peterk/.env
+      - ../peterk/.env.prod
