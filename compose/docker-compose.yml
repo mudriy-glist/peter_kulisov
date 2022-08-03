@@ -27,7 +27,7 @@ services:
     # depends_on:
     #   - db
     volumes:
-      # - ../peterk:/code
+      - ../peterk:/code
       - static_volume:/code/staticfiles
     env_file:
       - ../peterk/.env
