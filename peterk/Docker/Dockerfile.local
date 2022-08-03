@@ -37,7 +37,7 @@ COPY . /code/
 
 # Entrypoint
 COPY Docker/entrypoint.local.sh /usr/local/bin
-RUN sed -i 's/\r$//g' /usr/local/bin/entrypoint.prod.sh
+RUN sed -i 's/\r$//g' /usr/local/bin/entrypoint.local.sh
 RUN chmod u+x /usr/local/bin/entrypoint.local.sh
 
 ENTRYPOINT ["/usr/local/bin/entrypoint.local.sh"]
