@@ -33,6 +33,10 @@ RUN pip install --upgrade pip \
 # Tools
 COPY . /code/
 
+# Gunicorn
+RUN pip install gunicorn[gevent]
+
+
 EXPOSE 80
 EXPOSE 2222
 
