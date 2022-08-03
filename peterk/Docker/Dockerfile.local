@@ -30,18 +30,21 @@ RUN pip install --upgrade pip \
      && pip install --no-cache-dir -r requirements.txt
 
 
-# Tools
-COPY . /code/
+
 
 # Gunicorn
 RUN pip install gunicorn[gevent]
 
+# Tools
+COPY . /code/
 
-EXPOSE 80
-EXPOSE 2222
+
+# EXPOSE 80
+# EXPOSE 2222
 
 # Entrypoint
 COPY Docker/entrypoint.local.sh /usr/local/bin
+RUN sed -i 's/\r$//g' /usr/local/bin/entrypoint.local.sh
 RUN chmod u+x /usr/local/bin/entrypoint.local.sh
 
 ENTRYPOINT ["/usr/local/bin/entrypoint.local.sh"]
